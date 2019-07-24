@@ -1,6 +1,7 @@
 package com.mifos.mobile.passcode;
 
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.mifos.mobile.passcode.utils.ForegroundChecker;
 

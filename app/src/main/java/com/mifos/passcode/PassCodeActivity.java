@@ -1,5 +1,6 @@
 package com.mifos.passcode;
 
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
@@ -21,6 +22,11 @@ public class PassCodeActivity extends MifosPassCodeActivity {
     @Override
     public void startNextActivity() {
         //start intent for the next activity
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
