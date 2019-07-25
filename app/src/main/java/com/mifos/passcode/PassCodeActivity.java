@@ -3,6 +3,8 @@ package com.mifos.passcode;
 import android.view.View;
 import android.widget.Toast;
 
+import com.mifos.mobile.passcode.FpAuthDialog;
+import com.mifos.mobile.passcode.FpAuthHelper;
 import com.mifos.mobile.passcode.MifosPassCodeActivity;
 import com.mifos.mobile.passcode.utils.EncryptionUtil;
 
@@ -39,4 +41,9 @@ public class PassCodeActivity extends MifosPassCodeActivity {
         return EncryptionUtil.DEFAULT;
     }
 
+    @Override
+    public String getFingerprintDialogTitle() {
+        //Title to be shown for Fingerprint Dialog
+        return "Login";
+    }
 }
